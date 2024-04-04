@@ -3,9 +3,8 @@ FROM ubuntu:22.04
 SHELL ["/bin/bash", "-c"]
 
 RUN apt update && \
-  python3.10 \
+  apt install python3.10 \
   python3.10-venv \
-  apt install \
   systemctl \
   curl \
   nano \
